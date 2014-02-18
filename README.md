@@ -33,9 +33,9 @@ Example usage
 	ret_struct = struct.unpack(binary_format, buf[0:struct.calcsize(binary_format)])
 	for x in ret_struct:
 	    if isinstance(x, bytes):
-		print(x.decode())
+	        print(x.decode())
 	    else:
-		print(x)
+	        print(x)
 	ret = conn.make_call("70233", "70218")
 	print("Return of make_call:", ret)
 	time.sleep(3)
